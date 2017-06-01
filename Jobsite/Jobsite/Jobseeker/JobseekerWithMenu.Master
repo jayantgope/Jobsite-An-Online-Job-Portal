@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JobseekerWithMenu.Master.cs" Inherits="Jobsite.JobseekerMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="../images/Jobsite.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            <div id="login_panel">
+                <asp:ContentPlaceHolder ID="cphLoginPanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="logo">
+                <asp:Image ID="Image1" runat="server" Height="100%" ImageUrl="~/images/Logo.png" />
+            </div>
+            <div id="tabs">
+                <asp:ContentPlaceHolder ID="cphTabs" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="menu">
+            <asp:ContentPlaceHolder ID="cphMenus" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="search_register">
+            <asp:ContentPlaceHolder ID="cphMainContents" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">© Jobsite 2016, All rights reserved.</div>
+    </div>
+    </form>
+</body>
+</html>
