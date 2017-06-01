@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{642AABA2-C90A-439C-85DE-89826898F706}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jobsite</RootNamespace>
+    <AssemblyName>Jobsite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\styles.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Employer\EmployerHomePage.aspx" />
+    <Content Include="Employer\EmployerRegistration.aspx" />
+    <Content Include="Employer\EmployerLogin.aspx" />
+    <Content Include="Employer\Home.aspx" />
+    <Content Include="Employer\PostNewJob.aspx" />
+    <Content Include="images\Logo.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\Bg.gif" />
+    <Content Include="images\j.gif" />
+    <Content Include="images\Jobsite.ico" />
+    <Content Include="Jobseeker\JobseekerRegistration.aspx" />
+    <Content Include="Jobseeker\ResumeManager.aspx" />
+    <Content Include="Jobseeker\JHomePage.aspx" />
+    <Content Include="Jobseeker\JobseekerLogin.aspx" />
+    <Content Include="Jobseeker\Home.aspx" />
+    <Content Include="Jobseeker\SearchJob.aspx" />
+    <Content Include="Jobseeker\JobSearchResults.aspx" />
+    <Content Include="jquery-latest.min.js" />
+    <Content Include="jquery.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerHomePage.aspx.cs">
+      <DependentUpon>EmployerHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerHomePage.aspx.designer.cs">
+      <DependentUpon>EmployerHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerWithMenu.Master.cs">
+      <DependentUpon>EmployerWithMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerWithMenu.Master.designer.cs">
+      <DependentUpon>EmployerWithMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerWithoutMenu.Master.cs">
+      <DependentUpon>EmployerWithoutMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerWithoutMenu.Master.designer.cs">
+      <DependentUpon>EmployerWithoutMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerRegistration.aspx.cs">
+      <DependentUpon>EmployerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerRegistration.aspx.designer.cs">
+      <DependentUpon>EmployerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerLogin.aspx.cs">
+      <DependentUpon>EmployerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerLogin.aspx.designer.cs">
+      <DependentUpon>EmployerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\PostNewJob.aspx.cs">
+      <DependentUpon>PostNewJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\PostNewJob.aspx.designer.cs">
+      <DependentUpon>PostNewJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerWithMenu.Master.cs">
+      <DependentUpon>JobseekerWithMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerWithMenu.Master.designer.cs">
+      <DependentUpon>JobseekerWithMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerWithoutMenu.Master.cs">
+      <DependentUpon>JobseekerWithoutMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerWithoutMenu.Master.designer.cs">
+      <DependentUpon>JobseekerWithoutMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerRegistration.aspx.cs">
+      <DependentUpon>JobseekerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerRegistration.aspx.designer.cs">
+      <DependentUpon>JobseekerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\ResumeManager.aspx.cs">
+      <DependentUpon>ResumeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\ResumeManager.aspx.designer.cs">
+      <DependentUpon>ResumeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JHomePage.aspx.cs">
+      <DependentUpon>JHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JHomePage.aspx.designer.cs">
+      <DependentUpon>JHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerLogin.aspx.cs">
+      <DependentUpon>JobseekerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JobseekerLogin.aspx.designer.cs">
+      <DependentUpon>JobseekerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\SearchJob.aspx.cs">
+      <DependentUpon>SearchJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\SearchJob.aspx.designer.cs">
+      <DependentUpon>SearchJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker\JobSearchResults.aspx.cs">
+      <DependentUpon>JobSearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker\JobSearchResults.aspx.designer.cs">
+      <DependentUpon>JobSearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jobseeker\JobseekerWithMenu.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jobseeker\JobseekerWithoutMenu.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resumes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Employer\EmployerWithMenu.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Employer\EmployerWithoutMenu.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53395</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
