@@ -1,0 +1,19 @@
+public void Upload_Resume()
+        {
+            if (fuResume.PostedFile != null && fuResume.PostedFile.ContentLength > 0)
+            {
+
+                string fileName = Path.GetFileName(fuResume.PostedFile.FileName);
+                string folder = Server.MapPath("~/Resumes/");
+                Directory.CreateDirectory(folder);
+                fuResume.PostedFile.SaveAs(Path.Combine(folder, fileName));
+                try
+                {
+                    Response.Write("Uploaded: " + fileName);
+                }
+                catch
+                {
+                    
+                }
+            }
+        }

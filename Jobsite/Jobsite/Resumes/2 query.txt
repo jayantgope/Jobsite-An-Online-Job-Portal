@@ -1,0 +1,8 @@
+SqlCommand loginDetails = new SqlCommand("INSERT INTO login VALUES ('" + email_id + "','" + password + "','Jobseeker', 'Active')", connection);
+            loginDetails.ExecuteNonQuery();
+            connection.Close();
+
+            Db_Connection();
+            SqlCommand jobseekerDetails = new SqlCommand("INSERT INTO jobseeker_registration(email_id, first_name, middle_name, last_name, city, state, mobile_no, experience, designation, key_skills, basic_education) VALUES ('" + email_id + "','" + first_name + "','" + middle_name + "','" + last_name + "','" + city + "','" + state + "','" + mobile_number + "','" + experience + "','" + designation + "','" + key_skills + "','" + basic_education + "')", connection);
+            jobseekerDetails.ExecuteNonQuery();
+            connection.Close();
