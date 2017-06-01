@@ -1,0 +1,5 @@
+c:\users\j!n\documents\visual studio 2010\Projects\Jobsite\Jobsite\bin\Jobsite.dll
+c:\users\j!n\documents\visual studio 2010\Projects\Jobsite\Jobsite\bin\Jobsite.pdb
+c:\users\j!n\documents\visual studio 2010\Projects\Jobsite\Jobsite\obj\Debug\Jobsite.dll
+c:\users\j!n\documents\visual studio 2010\Projects\Jobsite\Jobsite\obj\Debug\Jobsite.pdb
+C:\Users\J!N\Documents\Visual Studio 2010\Projects\Jobsite\Jobsite\obj\Debug\Jobsite.csprojResolveAssemblyReference.cache
